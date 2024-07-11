@@ -15,7 +15,7 @@
     --bg-color:#000000;
     --second-bg-color:#161616;
     --text-color:#fff;
-    --main-color:#7b4bb7;
+    --main-color:#744bb7;
 
 }
 html{
@@ -41,7 +41,7 @@ header{
     top:0;
     left:0;
     width:100%;
-    padding: 3rem 9%;
+    padding: 2rem 9%;
     background: rgba(0,0,0,0.7);
     filter:drop-shadow(10px);
     display:flex;
@@ -255,28 +255,29 @@ span {
 }
 .services {
     background: var(--second-bg-color);
+    padding-top: 150px;
 
 }
 .services-container {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    align-items:center;
-    gap:2.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
 }
-.service-box {
+.services-box {
     background-color: var(--main-color);
-    height: 250px;
+    height: 300px;
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.3s ease;
 }
-.service-box:hover {
-    background: transparent;
-    color:var(--text-color);
+.services-box:hover {
+    background: rgb(222, 200, 255);
+    color:black;
     transform:scale(1.03);
     border: 1px solid var(--main-color);
+    font-weight:bolder;
 }
-.service-box .service-info {
+.services-box .services-info {
     display:flex;
     flex-direction:column;
     text-align:left;
@@ -285,12 +286,12 @@ span {
     align-items: baseline;
     padding: 5em;
 }
-.service-info h4 {
+.services-info h4 {
     font-size: 2.5rem;
     font-weight: 500;
     margin-bottom: 1rem;
 }
-.service-info p {
+.services-info p {
     font-size: 1.6rem;
     font-weight: 400;
     max-height: 100px;
@@ -320,10 +321,11 @@ span {
     background-color: var(--bg-color);
 }
 .skills .container {
-    background: #e1352c54;
+    background: #992ce154;
     color: var(--text-color);
     border-radius: 1rem;
     padding: 2rem;
+    
     width: 100%;
     margin: auto;
     margin-top: 2rem;
@@ -344,15 +346,21 @@ span {
 
 }
 .skills .container .bar:hover {
-    box-shadow: 0 4px 10px var(--main-color) ;
+    box-shadow: 0 4px 10px var(--text-color) ;
     transform: scale(1.03);
+    transition: 0.4s;
 }
 .skills .container .bar .info {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+
     margin-top: 1rem;
+}
+.info img{
+    height:150px;
+    width: 200px;
 }
 .skills .container .bar .info span {
     font-size: 2rem;
@@ -378,6 +386,7 @@ span {
 }
 .education {
     background: var(--second-bg-color);
+    padding-top: 150px;
 }
 .education .timeline{
     position: relative;
